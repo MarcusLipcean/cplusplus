@@ -1,0 +1,24 @@
+//This program gives you the number of people from a house and how near they are to Pacala
+#include <bits/stdc++.h>
+using namespace std;
+ifstream fin("case1.in");
+ofstream fout("case1.out");
+int main()
+{ int k1=0, k2=0, k3=0, sb=0, sf=0, sc=0, g, nr, i, n;
+  fin>>n;
+  for(i=1;i<=n;i++){
+    fin>>nr;
+    sc=sc+nr%10;
+    nr/=10;
+    sf=sf+nr%10;
+    nr/=10;
+    sb=sb+nr%10;
+    nr/=10;
+    g=nr;
+    if(g==1) k1++;
+    else if(g==2) k2++;
+    else k3++;
+  }
+  fout<<k1<<endl<<k2<<endl<<k3<<endl<<sb<<endl<<sf<<sc;
+    return 0;
+}
