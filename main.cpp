@@ -1,0 +1,24 @@
+//This program tells you what kids from a class didn't made his homework
+#include <bits/stdc++.h>
+using namespace std;
+ifstream fin("tema.in");
+ofstream fout("tema.out");
+int main()
+{ int a[31], i, n, c, nr, cati, pana=0;
+  fin>>n>>c;
+  cati=n-c;
+  for(i=1;i<=n;i++)
+    a[i]=0;
+  for(i=1;i<=n;i++){
+    fin>>nr;
+    a[nr]=1;
+    }
+  for(i=1;i<=n;i++){
+    if(a[i]==0){
+        fout<<i<<endl;
+        pana++;
+        if(cati==pana) break;
+    }
+  }
+    return 0;
+}
