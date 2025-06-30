@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+using namespace std;
+ifstream fin("codcorect.in");
+ofstream fout("codcorect.out");
+int main()
+{ int a[31], i, n, nr, k=0, num=0, j, numa=0;
+  fin>>n;
+  for(i=1;i<=30;i++)
+    a[i]=0;
+  for(i=1;i<=n;i++){
+    fin>>nr;
+  while(nr>0){
+    k++;
+    a[k]=nr%10;
+    nr/=10;
+    }
+    for(j=1;j<=k;j++)
+      num=num*10+a[j];
+    num/=10;
+    if(k%2==0){fout<<num<<"  "; break;}
+    else
+      if(a[1]>a[k]){fout<<num<<"  "; break;}
+        else{
+          a[1]=a[k];
+            for(j=1;j<=k;j++)
+              numa=numa*10+a[j];
+            fout<<numa<<"  ";
+        }
+    for(j=1;j<=k;j++)
+      a[j]=0;
+    k=0;
+    num=0;
+    numa=0;
+  }
+  fin.close();
+  fout.close();
+    return 0;
+}
