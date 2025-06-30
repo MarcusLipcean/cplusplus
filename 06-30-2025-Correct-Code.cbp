@@ -16,7 +16,6 @@ int main()
     }
     for(j=1;j<=k;j++)
       num=num*10+a[j];
-    num/=10;
     if(k%2==0){fout<<num<<"  "; break;}
     else
       if(a[1]>a[k]){fout<<num<<"  "; break;}
