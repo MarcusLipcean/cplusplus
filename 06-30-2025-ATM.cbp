@@ -12,5 +12,7 @@ int main()
     else if(s>nr){nr/=10; s-=nr;}
   }
   fout<<s;
+  fin.close();
+  fout.close();
     return 0;
 }
