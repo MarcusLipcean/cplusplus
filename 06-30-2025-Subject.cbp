@@ -1,4 +1,4 @@
-//This program tells you what kids from a class didn't made his homework
+//This program says to you what kids from a class didn't made his homework
 #include <bits/stdc++.h>
 using namespace std;
 ifstream fin("tema.in");
