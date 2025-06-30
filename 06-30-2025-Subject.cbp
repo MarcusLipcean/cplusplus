@@ -20,5 +20,7 @@ int main()
         if(cati==pana) break;
     }
   }
+  fin.close();
+  fout.close();
     return 0;
 }
