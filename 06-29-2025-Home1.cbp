@@ -20,5 +20,7 @@ int main()
     else k3++;
   }
   fout<<k1<<endl<<k2<<endl<<k3<<endl<<sb<<endl<<sf<<sc;
+  fin.close();
+  fout.close();
     return 0;
 }
