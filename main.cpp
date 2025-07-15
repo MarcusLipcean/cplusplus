@@ -1,0 +1,38 @@
+//This program gives you the winner of a game of cards
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{ int a[100], i, n, kandrei=0, ktudor=0, alegeri[100];
+  cin>>n;
+  for(i=1;i<=n;i++)
+    cin>>a[i];
+  for(i=1;i<=n;i++)
+    cin>>alegeri[i];
+  i=0;
+  while(i<=n){
+    i++;
+    if(i%2==1){
+      if(alegeri[i]==1){
+        kandrei+=a[i];
+        i++;
+    }
+      else{
+        kandrei+=a[n];
+        n--;
+    }
+    }
+    else{
+      if(alegeri[i]==1){
+        ktudor+=a[i];
+        i++;
+    }
+      else{
+        ktudor+=a[n];
+        n--;
+    }
+    }
+  }
+  if(kandrei>ktudor) cout<<kandrei<<"  1";
+  else cout<<ktudor<<"  2";
+    return 0;
+}
