@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+int a[100][100], i, j, k[100];
+void binar(int x){
+j=0;
+k[i]=0;
+while(x!=0){
+j++;
+a[i][j]=x%2;
+if(a[i][j]==1) k[i]++;
+x/=2;
+}
+a[i][0]=j;
+}
+int main()
+{ int c, b, l, mx=0;
+  cin>>c>>b;
+  for(i=c;i<=b;i++)
+    binar(i);
+  for(i=c;i<=b;i++)
+    if(k[i]>mx) mx=k[i];
+  for(i=c;i<=b;i++)
+    if(k[i]==mx){
+      for(l=a[i][0];l>=1;l--)
+        if(a[i][l]==1) cout<<"-";
+        else cout<<".";
+    cout<<"  ";
+    }
+    return 0;
+}
