@@ -1,4 +1,4 @@
-//This program gives you the winner of a game of cards
+//This program gives you the winner in the game of cards
 #include<bits/stdc++.h>
 using namespace std;
 int main()
