@@ -1,4 +1,4 @@
-//This program says to you how much money is in a ATM after some transfers
+//This program shows how much money is left in a ATM after some transfers
 #include <bits/stdc++.h>
 using namespace std;
 ifstream fin("bancomat.in");
