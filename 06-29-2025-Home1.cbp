@@ -1,4 +1,4 @@
-//This program gives you the number of people from a house and how near they are to Pacala
+//This program shows the number of people from a house and how near they are to Pacala
 #include <bits/stdc++.h>
 using namespace std;
 ifstream fin("case1.in");
