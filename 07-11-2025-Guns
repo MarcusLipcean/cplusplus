@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-//This program gives you what is the max power of some guns
+//This program shows what is the max shooting power of some guns
 using namespace std;
 ifstream fin("arme.in");
 ofstream fout("arme.out");
