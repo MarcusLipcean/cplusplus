@@ -1,4 +1,4 @@
-//This program says to you what numbers are valid to the banks laws
+//This program shows what numbers are valid to the banks
 #include <bits/stdc++.h>
 using namespace std;
 ifstream fin("codcorect.in");
