@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+//This program transforms a number to binary and the binary is transformed in a language that Anda invented
 using namespace std;
 int a[100][100], i, j, k[100];
 void binar(int x){
