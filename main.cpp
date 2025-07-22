@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{ int a[100], i, n, s, k, l; bool b=true;
+  cin>>n>>s>>k;
+  for(i=1;i<=n;i++)
+    a[i]=0;
+  a[s]=1;
+  cout<<s;
+  i=s;
+  while(b){
+    l=1;
+    if (i==n) i=1;
+    else i++;
+      while(b && l<k)
+          if(i==n){
+            i=1;
+            l++;
+      }
+          else{
+            i++;
+            l++;
+        }
+    if(a[i]==1) b=false;
+    else{
+      a[i]=1;
+      cout<<"  "<<i;
+    }
+  }
+  cout<<endl;
+  l=0;
+  for(i=1;i<=n;i++)
+    if(a[i]==0) l++;
+  cout<<l;
+    return 0;
+}
