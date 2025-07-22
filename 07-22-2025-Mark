@@ -1,4 +1,4 @@
-//This program shows you the square of a twothree(23, 233, 2333...) number
+//This program shows you how some numbers are marked in a circle from 1 to n, starting from s and in k in k 
 #include <bits/stdc++.h>
 using namespace std;
 int main()
