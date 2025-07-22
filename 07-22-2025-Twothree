@@ -1,3 +1,4 @@
+//This program shows you the square of twothree number(23, 233, 2333...)
 #include <bits/stdc++.h>
 using namespace std;
 int main()
