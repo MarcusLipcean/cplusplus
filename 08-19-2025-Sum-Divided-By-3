@@ -36,3 +36,4 @@ int main()
     if(mb[i]==0) cout<<a[i]<<"  ";
     return 0;
 }
+
